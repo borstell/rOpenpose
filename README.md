@@ -33,9 +33,9 @@ This is a little busy and hard to read, but if indented it is much easier for hu
 
 Here, I have manually separated the values in groups of three, since that reflects the Openpose output (see the [Openpose documentation](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md) for more details on the data formats). Basically, the first group is keypoint `0`, which refers to the nose. The first value is the `x` coordinate, the second is the `y` coordinate, and the third is the `ci` value, which means _confidence interval_ and shows how certain Openpose is that the keypoint position was accurately estimated. Thus, in this example, we get that 
     
-      x=0.484776
-      y=0.26635
-      ci=0.888864
+      x  = 0.484776
+      y  = 0.26635
+      ci = 0.888864
       
 which means that Openpose is about 89% certain that the nose is located at approximately (0.48, 0.27). Note that this output uses values between 0 and 1 for the image/video dimensions, but exact pixel values can also be used (e.g. 320x240).
 
